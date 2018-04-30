@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubViewer.Android", "GitHubViewer\GitHubViewer.Android\GitHubViewer.Android.csproj", "{F40AFC62-F055-47B1-BF4D-843C572929DA}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "GitHubViewer", "GitHubViewer\GitHubViewer\GitHubViewer.shproj", "{37F5B0F8-3648-4471-80FC-7953CDE84A97}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		GitHubViewer\GitHubViewer\GitHubViewer.projitems*{37f5b0f8-3648-4471-80fc-7953cde84a97}*SharedItemsImports = 13
+		GitHubViewer\GitHubViewer\GitHubViewer.projitems*{f40afc62-f055-47b1-bf4d-843c572929da}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F40AFC62-F055-47B1-BF4D-843C572929DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F40AFC62-F055-47B1-BF4D-843C572929DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F40AFC62-F055-47B1-BF4D-843C572929DA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F40AFC62-F055-47B1-BF4D-843C572929DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F40AFC62-F055-47B1-BF4D-843C572929DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F40AFC62-F055-47B1-BF4D-843C572929DA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DFF9F03B-0A7C-4CBC-B4AA-20231B1B1277}
+	EndGlobalSection
+EndGlobal
