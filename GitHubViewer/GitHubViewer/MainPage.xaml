@@ -4,8 +4,7 @@
              xmlns:local="clr-namespace:GitHubViewer"
              x:Class="GitHubViewer.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
-
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Button x:Name="SignInBtn" Text="Sign In With GitHub" Clicked="GitHubSignInClicked"></Button>
+    </StackLayout>
 </ContentPage>

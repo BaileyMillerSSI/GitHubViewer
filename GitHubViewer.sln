@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubViewer.Android", "Git
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "GitHubViewer", "GitHubViewer\GitHubViewer\GitHubViewer.shproj", "{37F5B0F8-3648-4471-80FC-7953CDE84A97}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OAuthHelper", "GitHubViewer\OAuthHelper\OAuthHelper.csproj", "{9CDC9C20-699A-4CDF-8DFE-4943F0BB7DE6}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		GitHubViewer\GitHubViewer\GitHubViewer.projitems*{37f5b0f8-3648-4471-80fc-7953cde84a97}*SharedItemsImports = 13
@@ -23,6 +25,10 @@ Global
 		{F40AFC62-F055-47B1-BF4D-843C572929DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F40AFC62-F055-47B1-BF4D-843C572929DA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F40AFC62-F055-47B1-BF4D-843C572929DA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9CDC9C20-699A-4CDF-8DFE-4943F0BB7DE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CDC9C20-699A-4CDF-8DFE-4943F0BB7DE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CDC9C20-699A-4CDF-8DFE-4943F0BB7DE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CDC9C20-699A-4CDF-8DFE-4943F0BB7DE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -13,7 +13,7 @@ namespace GitHubViewer
 		{
 			InitializeComponent();
 
-			MainPage = new GitHubViewer.MainPage();
+			MainPage = new NavigationPage(new GitHubViewer.MainPage());
 		}
 
 		protected override void OnStart ()
