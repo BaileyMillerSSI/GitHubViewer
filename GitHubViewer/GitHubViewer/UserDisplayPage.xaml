@@ -4,7 +4,7 @@
              NavigationPage.HasBackButton="False"
              x:Class="GitHubViewer.UserDisplayPage"
              Title="GitHub Profile" Appearing="ContentPage_Appearing">
-    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="StartAndExpand">
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
 
         <Image x:Name="AvatarImage" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
         <Label x:Name="UserEmail" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
@@ -20,7 +20,7 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell Text="{Binding Name}"
-					 Detail="{Binding Language}" />
+					 Detail="{Binding Language}" TextColor="{StaticResource textColor}"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
