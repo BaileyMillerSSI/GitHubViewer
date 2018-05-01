@@ -3,33 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              NavigationPage.HasBackButton="False"
              x:Class="GitHubViewer.UserDisplayPage"
-             Title="GitHub Profile">
-  <ListView x:Name="MyListView"
-            ItemsSource="{Binding Items}"
-            ItemTapped="Handle_ItemTapped"
-            CachingStrategy="RecycleElement">
-            
-    <!--Built in Cells-->
-    <ListView.ItemTemplate>
-        <DataTemplate>
-            <TextCell Text="{Binding .}" />
-        </DataTemplate>
-    </ListView.ItemTemplate>
-    
-    <!--Custom View Cells-->
-    <!--
-    <ListView.ItemTemplate>
-      <DataTemplate>
-        <ViewCell>
-          <StackLayout>
-            <Label Text="{Binding Text}" 
-                   Style="{DynamicResource ListItemTextStyle}" />
-            <Label Text="{Binding Detail}" 
-                   Style="{DynamicResource ListItemDetailTextStyle}"/>
-          </StackLayout>
-        </ViewCell>
-      </DataTemplate>
-    </ListView.ItemTemplate>
-    -->
-  </ListView>
+             Title="GitHub Profile" Appearing="ContentPage_Appearing">
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="StartAndExpand">
+
+        <Image x:Name="AvatarImage" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+        <Label x:Name="UserEmail" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="HtmlLabelTapped" NumberOfTapsRequired="1" />
+            </Label.GestureRecognizers>
+        </Label>
+
+        <ListView  x:Name="GroupedView" ItemSelected="GroupedView_ItemSelected"
+		GroupDisplayBinding="{Binding Title}"
+		GroupShortNameBinding="{Binding ShortName}"
+		IsGroupingEnabled="true">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}"
+					 Detail="{Binding Language}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 </ContentPage>

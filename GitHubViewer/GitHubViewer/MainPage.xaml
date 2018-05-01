@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GitHubViewer"
-             x:Class="GitHubViewer.MainPage">
+             x:Class="GitHubViewer.MainPage"
+             Title="Github Authentication">
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
         <Button x:Name="SignInBtn" Text="Sign In With GitHub" Clicked="GitHubSignInClicked"></Button>

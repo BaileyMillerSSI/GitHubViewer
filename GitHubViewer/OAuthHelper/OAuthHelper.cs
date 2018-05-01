@@ -12,7 +12,7 @@ namespace OAuthHelper
 
         const string client_id = "da2a4dfdb573c4aa2ac6";
         const string secret = "10d299f4838eedc5695cd8e9d098c33ed17a5bb2";
-        const string scope = "user,repo";
+        const string scope = "user,read:user,user:email,repo";
         const string redirect_uri = "bailey-github://code";
 
         public static OAuthResponse response;
@@ -28,7 +28,7 @@ namespace OAuthHelper
 
         public static OAuthResponse ExchangeCode(string code)
         {
-            if (!String.IsNullOrEmpty(code))
+            if (!String.IsNullOrEmpty(code) && response == null)
             {
                 try
                 {
